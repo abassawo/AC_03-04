@@ -1,6 +1,7 @@
 package nyc.c4q.abassawo;
 /**
  * Created by c4q-Abass on 4/3/15.
+ * Linear Search;
  */
 
 import java.util.ArrayList;
@@ -14,7 +15,6 @@ public class LinearSearch {
         aList.add(12);
         aList.add(7);
         System.out.println(search(aList, 4));  //Should output 1.
-
     }
 
     public static int search(ArrayList<Integer> aList, int x) {

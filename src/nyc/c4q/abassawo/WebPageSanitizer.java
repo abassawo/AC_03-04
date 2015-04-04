@@ -2,6 +2,8 @@ package nyc.c4q.abassawo;
 
 /**
  * Created by c4q-Abass on 4/3/15.
+ * Web scraper assignment takes in a website url and sanitizes it to eliminate
+ * content that is in the script tag:  <script> TAG  </script>
  */
 
 import java.io.FileNotFoundException;
@@ -24,10 +26,7 @@ public class WebPageSanitizer {
         //html = HTTP.get (       stringToURL(html)    );
 
         URL site = HTTP.stringToURL(html);
-        String newString = HTTP.get(site);
-
-        //stringtoURL method 1st. Then retrieve web content.
-        //System.out.println("Original:\n" + newString); //test
+        String newString = HTTP.get(site); //Original string of HTML.
 
         System.out.println("\n" + "test" + "\n");
 
@@ -38,7 +37,6 @@ public class WebPageSanitizer {
 
             newString = newString.replace(scriptDel, "");
         }
-        //System.out.println("new");
         return newString;
     }
 }

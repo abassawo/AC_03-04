@@ -11,6 +11,8 @@ import java.text.DecimalFormat;
 
 /**
  * Distribution Calculator Assignment:
+ * Assignment to calculate distribution of letters from A to Z in a text file
+ *
  * Created by c4q-Abass on 4/3/15.
  */
 public class DistributionCalculator {
